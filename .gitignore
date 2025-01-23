@@ -1,0 +1,53 @@
+*.swp
+*.*~
+project.lock.json
+.DS_Store
+*.pyc
+nupkg/
+
+# Visual Studio Code
+.vscode
+
+# Rider
+.idea
+
+# User-specific files
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Build results
+[Dd]ebug/
+[Dd]ebugPublic/
+[Rr]elease/
+[Rr]eleases/
+x64/
+x86/
+build/
+bld/
+[Bb]in/
+[Oo]bj/
+[Oo]ut/
+msbuild.log
+msbuild.err
+msbuild.wrn
+
+# Visual Studio 2015
+.vs/
+
+
+# storedFiles
+LeadManagementAppV2/wwwroot/images/templateFormFiles/*
+LeadManagementAppV2/wwwroot/images/templateMediaFiles/*
+LeadManagementAppV2/wwwroot/images/backgroundFiles/*
+LeadManagementAppV2/wwwroot/images/whatsappAttachments/*
+LeadManagementAppV2/wwwroot/fileStorage/voiceRecords/*
+LeadManagementAppV2/wwwroot/fileStorage/voiceRecordsTemp/*
+LeadManagementAppV2/wwwroot/fileStorage/attachments/*
+LeadManagementAppV2/wwwroot/fileStorage/attachmentsTemp/*
+LeadManagementAppV2/wwwroot/images/teamProfilePhotos/Default.png
+LeadManagementAppV2/wwwroot/images/teamProfilePhotos/2d5090a4-8b99-458d-a4f3-87cfe543d9a1.jpg
+LeadManagementAppV2/wwwroot/images/teamProfilePhotos/1cd25712-5138-428a-934e-7825a436f9ad.jpg
+LeadManagementAppV2/appsettings.json
+LeadManagementAppV2/appsettings.json
