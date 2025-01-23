@@ -32,12 +32,12 @@ namespace weasewebrtcsavebigfileapi
             });
             services.AddControllersWithViews();
             services.AddMvc();
-            IConfigurationSection bigVideoSaveFileLocation = _config.GetSection("BigVideoSaveLocation");
-            services.Configure<BigVideoSaveLocation>(bigVideoSaveFileLocation);
+            IConfigurationSection parameters = _config.GetSection("Params");
+            services.Configure<Params>(parameters);
 
             services.AddSwaggerGen(c =>
             {
-                c.SwaggerDoc("v1", new OpenApiInfo { Title = "My API", Version = "v1" });
+                c.SwaggerDoc("v1", new OpenApiInfo { Title = "Wease Webrtc Video Recorder", Version = "v1" });
             });
         }
 
@@ -51,7 +51,7 @@ namespace weasewebrtcsavebigfileapi
             }
             app.UseSwagger();
 
-            app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "My API V1"));
+            app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "Wease Webrtc Video Recorder V1"));
             app.UseCors("MyPolicy");
             app.UseHttpsRedirection();
      
